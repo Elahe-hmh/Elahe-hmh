@@ -9,12 +9,19 @@
     h1, h2 { line-height: 1.2; }
     a { color: #245c83; }
     nav a { margin-right: 1rem; }
+    .header-container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap-reverse; }
+    .profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #e5e9ed; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Master's student in [Your Field] at [University]</p>
+    <div class="header-container">
+      <div>
+        <h1>Your Name</h1>
+        <p>Master's student in [Your Field] at [University]</p>
+      </div>
+      <img src="profile.jpg" alt="Profile photo" class="profile-photo">
+    </div>
     <nav aria-label="Page navigation">
       <a href="#about">About</a>
       <a href="#research">Research</a>
