@@ -153,19 +153,23 @@
     .about-bio {
       flex: 1;
     }
-    .kid-photo-wrapper {
+    .about-photos {
+      display: flex;
+      gap: 0.85rem;
       flex-shrink: 0;
+    }
+    .about-photo-card {
       text-align: center;
     }
-    .kid-photo {
-      width: 140px;
-      height: 140px;
+    .about-photo {
+      width: 130px;
+      height: 130px;
       object-fit: cover;
       border-radius: 8px;
       border: 1px solid var(--border);
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-    .kid-photo-caption {
+    .about-photo-caption {
       font-size: 0.8rem;
       color: var(--muted);
       margin-top: 0.35rem;
@@ -218,9 +222,15 @@
               I'm interested in applied mathematics and studying real physical systems through the lens of mathematics and the mathematical tools we have.</p>
             <p style="color: var(--muted); font-size: 0.95rem;">* Also this website is still a work in progress, so I'll probably be adding more things here over time.</p>
           </div>
-          <div class="kid-photo-wrapper">
-            <img src="kid.jpg" alt="Childhood photo" class="kid-photo">
-            <div class="kid-photo-caption">Little me :)</div>
+          <div class="about-photos">
+            <div class="about-photo-card">
+              <img src="kid.jpg" alt="Childhood photo" class="about-photo">
+              <div class="about-photo-caption">Little me :)</div>
+            </div>
+            <div class="about-photo-card">
+              <img src="big_me.jpg" alt="Recent photo" class="about-photo">
+              <div class="about-photo-caption">Big me!</div>
+            </div>
           </div>
         </div>
 
