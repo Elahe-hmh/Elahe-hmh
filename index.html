@@ -144,8 +144,36 @@
       border-radius: 3px;
     }
 
+    .about-layout {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+    .about-bio {
+      flex: 1;
+    }
+    .kid-photo-wrapper {
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .kid-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .kid-photo-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
     @media (max-width: 680px) {
       .intro-hero { flex-direction: column-reverse; align-items: center; text-align: center; }
+      .about-layout { flex-direction: column-reverse; align-items: center; text-align: left; }
       .contact-badges { justify-content: center; }
       .profile-photo { width: 200px; height: 200px; }
     }
@@ -184,10 +212,17 @@
       <!-- Tab 1: About -->
       <section id="tab-about" class="tab-content active">
         <h2>About Me</h2>
-        <p>I'm a graduate student in Mathematics at the University of British Columbia (UBC). My background is in physics and biomedical engineering.
-          I'm interested in applied mathematics and studying real physical systems through the lens of mathematics and the mathematical tools we have.
-        *Also this website is still under construction, so you probably see more contents in the future.
-        </p>
+        <div class="about-layout">
+          <div class="about-bio">
+            <p>I'm a graduate student in Mathematics at the University of British Columbia (UBC). I'm originally from Iran and I studied physics in my undergraduate.
+              I'm interested in applied mathematics and studying real physical systems through the lens of mathematics and the mathematical tools we have.</p>
+            <p style="color: var(--muted); font-size: 0.95rem;">* Also this website is still a work in progress, so I'll probably be adding more things here over time.</p>
+          </div>
+          <div class="kid-photo-wrapper">
+            <img src="kid.jpg" alt="Childhood photo" class="kid-photo">
+            <div class="kid-photo-caption">Little me :)</div>
+          </div>
+        </div>
 
         <h3 style="margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.15rem;">Education</h3>
         <div class="item">
