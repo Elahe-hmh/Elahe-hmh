@@ -148,7 +148,7 @@
       <div class="nav-links">
         <button class="tab-btn active" onclick="switchTab('about')">About</button>
         <button class="tab-btn" onclick="switchTab('projects')">Research & Projects</button>
-        <button class="tab-btn" onclick="switchTab('education')">Education</button>
+        <button class="tab-btn" onclick="switchTab('notes')">Notes</button>
       </div>
     </div>
   </nav>
@@ -173,8 +173,16 @@
       <!-- Tab 1: About -->
       <section id="tab-about" class="tab-content active">
         <h2>About Me</h2>
-        <p>I am a graduate student at UBC interested in [research topics]. I work on theoretical and computational aspects of [field].</p>
-        <p>Welcome to my academic homepage! Here you can find details about my research, background, and current work.</p>
+        <p>I am a graduate student at UBC Mathematics.</p>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.15rem;">Education</h3>
+        <div class="item">
+          <div class="item-title">M.Sc. in Mathematics — University of British Columbia</div>
+          <div class="item-sub">2025 – Present · Vancouver, Canada</div>
+        </div>
+        <div class="item">
+          <div class="item-title">B.Sc. in Physics — Sharif University of Technology</div>
+        </div>
       </section>
 
       <!-- Tab 2: Research & Projects -->
@@ -184,37 +192,45 @@
           <div class="card">
             <div>
               <h3>Thesis Research</h3>
-              <p>Theoretical framework and formulation for [topic].</p>
+              <p>details</p>
             </div>
             <div class="card-links"><a href="#">Overview &rarr;</a></div>
           </div>
           <div class="card">
             <div>
               <h3>Computational Code</h3>
-              <p>Python/Julia scripts simulating [phenomenon].</p>
+              <p>Test.</p>
             </div>
             <div class="card-links"><a href="https://github.com/Elahe-hmh" target="_blank">GitHub Repo &rarr;</a></div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Reading Group Notes</h3>
-              <p>Weekly lecture notes and summaries.</p>
-            </div>
-            <div class="card-links"><a href="#">Notes (PDF) &rarr;</a></div>
           </div>
         </div>
       </section>
 
-      <!-- Tab 3: Education -->
-      <section id="tab-education" class="tab-content">
-        <h2>Education</h2>
-        <div class="item">
-          <div class="item-title">M.Sc. in Mathematics — University of British Columbia</div>
-          <div class="item-sub">2024 – Present · Vancouver, Canada</div>
-        </div>
-        <div class="item">
-          <div class="item-title">B.Sc. in Mathematics — [University]</div>
-          <div class="item-sub">Graduated 2024</div>
+      <!-- Tab 3: Notes -->
+      <section id="tab-notes" class="tab-content">
+        <h2>Notes & Coursework</h2>
+        <p style="color: var(--muted); margin-bottom: 1.5rem;">Notes, expository writings, and materials for courses and seminars.</p>
+        
+        <div class="grid">
+          <div class="card">
+            <div>
+              <h3>Topic / Course Name</h3>
+              <p>Short description of the topic, course number, or seminar focus.</p>
+            </div>
+            <div class="card-links">
+              <a href="notes/sample-note.pdf" target="_blank">Download PDF &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h3>Another Course / Seminar</h3>
+              <p>Expository notes covering key theorems, problems, or lecture summaries.</p>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank">View Notes &rarr;</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
