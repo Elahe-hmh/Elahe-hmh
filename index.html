@@ -133,16 +133,15 @@
     .item-title { font-weight: 600; font-size: 1rem; }
     .item-sub { color: var(--muted); font-size: 0.9rem; }
 
-    .skills-badges {
+    .card-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      align-items: center;
-      margin-bottom: 1.75rem;
+      gap: 0.35rem;
+      margin: 0.65rem 0 0.85rem;
     }
-    .skills-badges img {
-      height: 26px;
-      border-radius: 4px;
+    .card-tags img {
+      height: 20px;
+      border-radius: 3px;
     }
 
     @media (max-width: 680px) {
@@ -187,7 +186,8 @@
         <h2>About Me</h2>
         <p>I'm a graduate student in Mathematics at the University of British Columbia (UBC). My background is in physics and biomedical engineering.
           I'm interested in applied mathematics and studying real physical systems through the lens of mathematics and the mathematical tools we have.
-          </p>
+        *Also this website is still under construction, so you probably see more contents in the future.
+        </p>
 
         <h3 style="margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.15rem;">Education</h3>
         <div class="item">
@@ -202,21 +202,16 @@
       <!-- Tab 2: Research & Projects -->
       <section id="tab-projects" class="tab-content">
         <h2>Research & Projects</h2>
-        
-        <div class="skills-badges">
-          <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
-          <img src="https://img.shields.io/badge/Julia-9558B2?style=flat&logo=julia&logoColor=white" alt="Julia">
-          <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white" alt="C++">
-          <img src="https://img.shields.io/badge/LaTeX-474A8A?style=flat&logo=latex&logoColor=white" alt="LaTeX">
-          <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git">
-          <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="Linux">
-        </div>
 
         <div class="grid">
           <div class="card">
             <div>
               <h3>Thesis Research</h3>
               <p>details</p>
+              <div class="card-tags">
+                <img src="https://img.shields.io/badge/Julia-9558B2?style=flat&logo=julia&logoColor=white" alt="Julia">
+                <img src="https://img.shields.io/badge/LaTeX-474A8A?style=flat&logo=latex&logoColor=white" alt="LaTeX">
+              </div>
             </div>
             <div class="card-links"><a href="#">Overview &rarr;</a></div>
           </div>
@@ -224,6 +219,10 @@
             <div>
               <h3>Computational Code</h3>
               <p>Test.</p>
+              <div class="card-tags">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git">
+              </div>
             </div>
             <div class="card-links"><a href="https://github.com/Elahe-hmh" target="_blank">GitHub Repo &rarr;</a></div>
           </div>
